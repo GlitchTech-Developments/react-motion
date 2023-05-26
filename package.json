@@ -17,7 +17,7 @@
 	"scripts": {
 		"build": "pnpm run lint && tsc",
 		"lint": "eslint --ignore-path .gitignore . --ext ts",
-		"publish": "npm publish"
+		"package:publish": "standard-version && npm publish --access public"
 	},
 	"peerDependencies": {
 		"motion": "10.16.2",
@@ -32,9 +32,14 @@
 		"@typescript-eslint/parser": "^5.59.7",
 		"eslint": "^8.41.0",
 		"eslint-plugin-react": "^7.32.2",
-		"motion": "10.16.2",
-		"react": "18.2.0",
-		"react-dom": "18.2.0",
-		"typescript": "^5.0.4"
+		"standard-version": "^9.5.0"
+	},
+	"homepage": "https://github.com/GlitchTech-Developments/react-motion#readme",
+	"bugs": {
+		"url": "https://github.com/GlitchTech-Developments/react-motion/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GlitchTech-Developments/react-motion.git"
 	}
 }
