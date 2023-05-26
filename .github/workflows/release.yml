@@ -9,9 +9,6 @@ jobs:
         name: Build and release
         timeout-minutes: 15
         runs-on: ubuntu-latest
-        env:
-            GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-            NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
         steps:
             - name: Check out code
@@ -38,3 +35,6 @@ jobs:
 
             - name: Release version
               run: pnpm semantic-release
+              env:
+                  GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
