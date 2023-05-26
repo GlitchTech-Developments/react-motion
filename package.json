@@ -17,7 +17,8 @@
 	"scripts": {
 		"build": "pnpm run lint && tsc",
 		"lint": "eslint --ignore-path .gitignore . --ext ts",
-		"publish": "npm publish"
+		"publish": "npm publish",
+		"dev-prepare": "npx husky install"
 	},
 	"peerDependencies": {
 		"motion": "10.16.2",
