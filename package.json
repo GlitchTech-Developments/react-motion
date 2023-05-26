@@ -1,0 +1,59 @@
+{
+	"name": "@glitchtech-dev/react-motion",
+	"version": "1.0.0",
+	"description": "A simple wrapper of Motion for React.",
+	"main": "dist/index.js",
+	"keywords": [
+		"motion",
+		"react",
+		"wrapper"
+	],
+	"author": "GlitchTech Developments",
+	"license": "MIT",
+	"types": "dist/index.d.ts",
+	"files": [
+		"/dist"
+	],
+	"scripts": {
+		"build": "pnpm run lint && tsc",
+		"lint": "eslint --ignore-path .gitignore . --ext ts",
+		"publish": "npm publish"
+	},
+	"peerDependencies": {
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"typescript": "^5.0.4"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.6.3",
+		"@commitlint/config-conventional": "^17.6.3",
+		"@semantic-release/changelog": "^6.0.3",
+		"@semantic-release/git": "^10.0.1",
+		"@types/node": "^20.2.4",
+		"@types/react": "^18.2.7",
+		"@typescript-eslint/eslint-plugin": "^5.59.7",
+		"@typescript-eslint/parser": "^5.59.7",
+		"eslint": "^8.41.0",
+		"husky": "^8.0.3",
+		"semantic-release": "^21.0.2"
+	},
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-conventional"
+		]
+	},
+	"husky": {
+		"hooks": {
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	},
+	"release": {
+		"plugins": [
+			"@semantic-release/release-notes-generator",
+			"@semantic-release/changelog",
+			"@semantic-release/npm",
+			"@semantic-release/git",
+			"@semantic-release/github"
+		]
+	}
+}
