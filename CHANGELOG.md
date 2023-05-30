@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.7](https://github.com/GlitchTech-Developments/react-motion/compare/v1.1.6...v1.1.7) (2023-05-30)
+
+
+### Bug Fixes
+
+* added root index files to dist export array ([66dbcdf](https://github.com/GlitchTech-Developments/react-motion/commit/66dbcdfdb90b1a2a4e32f8534d16df1ec0a1063f))
+* update of README.md ([ee97429](https://github.com/GlitchTech-Developments/react-motion/commit/ee9742912d0f7c13b9047fadd86b508ca16d52a3))
+
 ### [1.1.6](https://github.com/GlitchTech-Developments/react-motion/compare/v1.1.5...v1.1.6) (2023-05-30)
 
 
