@@ -14,7 +14,7 @@
   </a>
 </p>
 
-> A simple wrapper of Motion for React.
+> A simple wrapper of Motion for React which will (at some point) work similar to the current Solid.js wrapper that already is provided by Motion themselves.
 
 ## Install
 
