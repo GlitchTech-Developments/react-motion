@@ -13,7 +13,9 @@ export const useMotionAnimate = (element, keyframeStyle, animationConfig) => {
 export const Motion = ({ children, animate, transition, }) => {
     const currentElem = React.useRef(null);
     React.useEffect(() => {
-        useMotionAnimate(currentElem.current, animate, transition);
+        if (currentElem.current !== null) {
+            useMotionAnimate(currentElem.current, animate, transition);
+        }
     }, []);
     return React.createElement("div", { ref: currentElem }, children ? children : React.createElement(React.Fragment, null));
 };

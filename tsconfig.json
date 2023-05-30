@@ -1,16 +1,25 @@
 {
 	"compilerOptions": {
-		"target": "ESNext",
-		"declaration": true,
-		"outDir": "./dist",
-		"lib": ["ESNext", "DOM"],
+		"allowJs": true,
+		"allowSyntheticDefaultImports": true,
 		"baseUrl": "./",
-		"checkJs": true,
+		"declaration": true,
+		"esModuleInterop": true,
+		"inlineSourceMap": false,
+		"lib": ["esnext", "DOM"],
+		"listEmittedFiles": false,
+		"listFiles": false,
 		"moduleResolution": "node",
+		"noFallthroughCasesInSwitch": true,
+		"pretty": true,
 		"resolveJsonModule": true,
-		"isolatedModules": false,
+		"rootDir": "src",
+		"skipLibCheck": true,
+		"strict": true,
+		"traceResolution": false,
 		"jsx": "react"
 	},
-	"include": ["src/**/*"],
-	"exclude": ["node_modules", "dist"]
+	"compileOnSave": true,
+	"exclude": ["node_modules", "dist"],
+	"include": ["src"]
 }

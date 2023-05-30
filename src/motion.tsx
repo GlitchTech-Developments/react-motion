@@ -34,7 +34,9 @@ export const Motion = ({
 	const currentElem = React.useRef(null);
 
 	React.useEffect(() => {
-		useMotionAnimate(currentElem.current, animate, transition);
+		if (currentElem.current !== null) {
+			useMotionAnimate(currentElem.current, animate, transition);
+		}
 	}, []);
 
 	return <div ref={currentElem}>{children ? children : <></>}</div>;

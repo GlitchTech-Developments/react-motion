@@ -4,5 +4,5 @@ export declare const useMotionAnimate: (element: ElementOrSelector, keyframeStyl
 export declare const Motion: ({ children, animate, transition, }: {
     children: React.ReactNode;
     animate: MotionKeyframesDefinition;
-    transition?: AnimationOptionsWithOverrides;
+    transition?: AnimationOptionsWithOverrides | undefined;
 }) => React.JSX.Element;

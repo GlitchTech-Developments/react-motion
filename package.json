@@ -3,6 +3,13 @@
 	"version": "1.1.9",
 	"description": "A simple wrapper of Motion for React.",
 	"main": "dist/cjs/index.js",
+	"module": "dist/esm/index.js",
+	"exports": {
+		".": {
+			"import": "./dist/sem/index.js",
+			"require": "./dist/cjs/index.js"
+		}
+	},
 	"keywords": [
 		"motion",
 		"react",
@@ -15,10 +22,9 @@
 		"/dist"
 	],
 	"scripts": {
-		"build": "pnpm run clean && pnpm run lint && tsc -b ./tsconfig.cjs.json ./tsconfig.esm.json ./tsconfig.types.json",
+		"build": "pnpm run lint && tsc -b ./tsconfig.cjs.json ./tsconfig.esm.json ./tsconfig.types.json",
 		"lint": "eslint --ignore-path .gitignore . --ext ts",
-		"package:publish": "pnpm run clean && pnpm run lint && tsc -b ./tsconfig.cjs.json ./tsconfig.esm.json ./tsconfig.types.json && standard-version && npm publish --access public",
-		"clean": "rm -rf ./dist"
+		"package:publish": "pnpm run lint && tsc -b ./tsconfig.cjs.json ./tsconfig.esm.json ./tsconfig.types.json && standard-version && npm publish --access public"
 	},
 	"peerDependencies": {
 		"motion": "10.16.2",
