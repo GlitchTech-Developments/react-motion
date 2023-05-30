@@ -22,18 +22,12 @@ export const useMotionAnimate = (
 	}
 };
 
-type MotionProps = {
-	children: React.ReactNode;
-	div?: React.ReactElement;
-	span?: React.ReactElement;
-};
-
 export const Motion = ({
 	props,
 	animate,
 	transition,
 }: {
-	props: MotionProps;
+	props?: React.PropsWithChildren;
 	animate: MotionKeyframesDefinition;
 	transition?: AnimationOptionsWithOverrides;
 }) => {
@@ -43,23 +37,9 @@ export const Motion = ({
 		useMotionAnimate(currentElem.current, animate, transition);
 	}, []);
 
-	if (props.div !== undefined) {
-		return (
-			<div ref={currentElem}>
-				{props?.children ? props?.children : ""}
-			</div>
-		);
-	} else if (props?.span !== undefined) {
-		return (
-			<span ref={currentElem}>
-				{props?.children ? props?.children : ""}
-			</span>
-		);
-	} else {
-		return (
-			<div ref={currentElem}>
-				{props?.children ? props?.children : ""}
-			</div>
-		);
-	}
+	return (
+		<div ref={currentElem} {...props}>
+			{props?.children ? props?.children : ""}
+		</div>
+	);
 };
