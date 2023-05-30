@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.6](https://github.com/GlitchTech-Developments/react-motion/compare/v1.1.5...v1.1.6) (2023-05-30)
+
+
+### Bug Fixes
+
+* added esm + cjs entryfiles (to be tested) + README & Licence ([6a4533b](https://github.com/GlitchTech-Developments/react-motion/commit/6a4533bf218ddf7b980ecd199fce84f0ab7ff136))
+
 ### [1.1.5](https://github.com/GlitchTech-Developments/react-motion/compare/v1.1.4...v1.1.5) (2023-05-30)
 
 
