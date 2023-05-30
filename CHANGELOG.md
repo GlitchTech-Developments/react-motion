@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.10](https://github.com/GlitchTech-Developments/react-motion/compare/v1.1.9...v1.1.10) (2023-05-30)
+
+
+### Bug Fixes
+
+* possible fix for hard entry es/cjs based ([9ae15f4](https://github.com/GlitchTech-Developments/react-motion/commit/9ae15f45a1e0cdc92c28828204df29931a173e15))
+* repair of main ref ([e502ee2](https://github.com/GlitchTech-Developments/react-motion/commit/e502ee2115fce49aff6850c2bad1bda2540d4b40))
+
 ### [1.1.9](https://github.com/GlitchTech-Developments/react-motion/compare/v1.1.8...v1.1.9) (2023-05-30)
 
 
