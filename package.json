@@ -12,7 +12,9 @@
 	"license": "MIT",
 	"types": "dist/index.d.ts",
 	"files": [
-		"/dist"
+		"/dist",
+		"index.js",
+		"index.cjs"
 	],
 	"scripts": {
 		"build": "pnpm run clean && pnpm run lint && tsc -b ./tsconfig.cjs.json ./tsconfig.esm.json ./tsconfig.types.json",
