@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.11](https://github.com/GlitchTech-Developments/react-motion/compare/v1.1.10...v1.1.11) (2023-05-30)
+
 ### [1.1.10](https://github.com/GlitchTech-Developments/react-motion/compare/v1.1.9...v1.1.10) (2023-05-30)
 
 
