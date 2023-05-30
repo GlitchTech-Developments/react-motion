@@ -9,7 +9,6 @@ import {
 	type MotionKeyframesDefinition,
 	animate,
 } from "motion";
-import { MotionProps } from "./types/motion";
 
 export const useMotionAnimate = (
 	element: ElementOrSelector,
@@ -21,6 +20,12 @@ export const useMotionAnimate = (
 	} catch (ex) {
 		console.error(ex);
 	}
+};
+
+type MotionProps = {
+	children: React.ReactNode;
+	div?: React.ReactElement;
+	span?: React.ReactElement;
 };
 
 export const Motion = ({
