@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.5](https://github.com/GlitchTech-Developments/react-motion/compare/v1.1.4...v1.1.5) (2023-05-30)
+
+
+### Bug Fixes
+
+* swapped type for Motion props ([7257ffb](https://github.com/GlitchTech-Developments/react-motion/commit/7257ffb01cc4dbadc04d512d147e748f00730ec0))
+* type + prop swap on Motion element ([7ffaa23](https://github.com/GlitchTech-Developments/react-motion/commit/7ffaa23ec620604cebc1832b15ecbca101b3c810))
+
 ### [1.1.4](https://github.com/GlitchTech-Developments/react-motion/compare/v1.1.3...v1.1.4) (2023-05-30)
 
 
