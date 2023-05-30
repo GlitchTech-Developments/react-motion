@@ -4,7 +4,13 @@
 		"target": "ESNext",
 		"declaration": true,
 		"outDir": "./dist",
-		"lib": ["ESNext", "DOM"]
+		"lib": ["ESNext", "DOM"],
+		"baseUrl": "./",
+		"checkJs": true,
+		"jsx": "preserve",
+		"jsxFactory": "React.createElement",
+		"jsxFragmentFactory": "React.Fragment",
+		"jsxImportSource": "react"
 	},
 	"include": ["src/**/*"],
 	"exclude": ["node_modules", "dist"]
