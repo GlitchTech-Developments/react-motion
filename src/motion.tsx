@@ -23,11 +23,11 @@ export const useMotionAnimate = (
 };
 
 export const Motion = ({
-	props,
+	children,
 	animate,
 	transition,
 }: {
-	props?: React.PropsWithChildren;
+	children: React.ReactNode;
 	animate: MotionKeyframesDefinition;
 	transition?: AnimationOptionsWithOverrides;
 }) => {
@@ -37,9 +37,5 @@ export const Motion = ({
 		useMotionAnimate(currentElem.current, animate, transition);
 	}, []);
 
-	return (
-		<div ref={currentElem} {...props}>
-			{props?.children ? props?.children : ""}
-		</div>
-	);
+	return <div ref={currentElem}>{children ? children : <></>}</div>;
 };
