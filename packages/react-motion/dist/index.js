@@ -1,2 +1,2 @@
-import { useMotionAnimate, Motion } from "./motion";
-export { useMotionAnimate, Motion };
+"use strict";Object.defineProperty(exports, "__esModule", {value: true});var _chunkUBPCHIM2js = require('./chunk-UBPCHIM2.js');exports.Motion = _chunkUBPCHIM2js.b; exports.useMotionAnimate = _chunkUBPCHIM2js.a;
+//# sourceMappingURL=index.js.map

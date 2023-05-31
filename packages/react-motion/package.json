@@ -2,23 +2,23 @@
 	"name": "@glitchtech-dev/react-motion",
 	"version": "1.1.11",
 	"description": "A simple wrapper of Motion for React.",
-	"type": "commonjs",
-	"main": "./dist/index.js",
-	"module": "./dist/index.js",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
 	"exports": {
 		".": {
-			"import": "./dist/*.js",
-			"types": "./dist/types/*.d.ts"
-		}
+			"types": "./dist/*.d.ts",
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js"
+		},
+		"./package.json": "./package.json"
 	},
-	"types": "./dist/types/*.d.ts",
 	"files": [
-		"./dist",
-		"index.d.ts"
+		"dist",
+		"package.json",
+		"LICENSE",
+		"README.md"
 	],
-	"directories": {
-		"bin": "./dist"
-	},
 	"keywords": [
 		"motion",
 		"react",
@@ -27,7 +27,8 @@
 	"author": "GlitchTech Developments",
 	"license": "MIT",
 	"scripts": {
-		"build": "pnpm run lint && tsc -b ./tsconfig.esm.json ./tsconfig.types.json",
+		"build": "tsup",
+		"build:old": "pnpm run lint && tsc -b ./tsconfig.esm.json ./tsconfig.types.json",
 		"lint": "eslint --ignore-path .gitignore . --ext ts",
 		"package:publish": "pnpm run lint && tsc -b ./tsconfig.esm.json ./tsconfig.types.json && standard-version && npm publish --access public"
 	},
@@ -45,7 +46,8 @@
 		"@typescript-eslint/parser": "^5.59.8",
 		"eslint": "^8.41.0",
 		"eslint-plugin-react": "^7.32.2",
-		"standard-version": "^9.5.0"
+		"standard-version": "^9.5.0",
+		"tsup": "^6.7.0"
 	},
 	"homepage": "https://github.com/GlitchTech-Developments/react-motion#readme",
 	"bugs": {

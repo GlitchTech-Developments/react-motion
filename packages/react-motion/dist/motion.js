@@ -1,21 +1,2 @@
-/* eslint-disable react/prop-types */
-"use client";
-import * as React from "react";
-import { animate, } from "motion";
-export const useMotionAnimate = (element, keyframeStyle, animationConfig) => {
-    try {
-        animate(element, keyframeStyle, animationConfig);
-    }
-    catch (ex) {
-        console.error(ex);
-    }
-};
-export const Motion = ({ children, animate, transition, }) => {
-    const currentElem = React.useRef(null);
-    React.useEffect(() => {
-        if (currentElem.current !== null) {
-            useMotionAnimate(currentElem.current, animate, transition);
-        }
-    }, []);
-    return React.createElement("div", { ref: currentElem }, children ? children : React.createElement(React.Fragment, null));
-};
+"use strict";Object.defineProperty(exports, "__esModule", {value: true});"use client";var _chunkUBPCHIM2js = require('./chunk-UBPCHIM2.js');exports.Motion = _chunkUBPCHIM2js.b; exports.useMotionAnimate = _chunkUBPCHIM2js.a;
+//# sourceMappingURL=motion.js.map

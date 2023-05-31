@@ -1,2 +1,3 @@
-import { useMotionAnimate, Motion } from "./motion";
-export { useMotionAnimate, Motion };
+export { Motion, useMotionAnimate } from './motion.js';
+import 'react';
+import 'motion';
