@@ -1,54 +1,17 @@
 {
-	"name": "@glitchtech-dev/react-motion",
-	"version": "1.1.11",
-	"description": "A simple wrapper of Motion for React.",
-	"type": "commonjs",
-	"main": "./dist/cjs/index.js",
-	"module": "./dist/esm/index.js",
-	"exports": {
-		".": {
-			"import": "./dist/cjs/index.js",
-			"require": "./dist/cjs/index.js"
-		}
-	},
-	"keywords": [
-		"motion",
-		"react",
-		"wrapper"
-	],
-	"author": "GlitchTech Developments",
-	"license": "MIT",
-	"types": "dist/index.d.ts",
-	"files": [
-		"./dist"
-	],
-	"scripts": {
-		"build": "pnpm run lint && tsc -b ./tsconfig.cjs.json ./tsconfig.types.json",
-		"lint": "eslint --ignore-path .gitignore . --ext ts",
-		"package:publish": "pnpm run lint && tsc -b ./tsconfig.cjs.json ./tsconfig.types.json && standard-version && npm publish --access public"
-	},
-	"peerDependencies": {
-		"motion": "10.16.2",
-		"react": "18.2.0",
-		"react-dom": "18.2.0",
-		"typescript": "^5.0.4"
-	},
-	"devDependencies": {
-		"@types/node": "^20.2.5",
-		"@types/react": "^18.2.7",
-		"@types/react-dom": "^18.2.4",
-		"@typescript-eslint/eslint-plugin": "^5.59.8",
-		"@typescript-eslint/parser": "^5.59.8",
-		"eslint": "^8.41.0",
-		"eslint-plugin-react": "^7.32.2",
-		"standard-version": "^9.5.0"
-	},
-	"homepage": "https://github.com/GlitchTech-Developments/react-motion#readme",
-	"bugs": {
-		"url": "https://github.com/GlitchTech-Developments/react-motion/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/GlitchTech-Developments/react-motion.git"
-	}
+  "name": "react-motion-mono",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@turbo/gen": "^1.10.0",
+    "eslint": "^8.41.0",
+    "prettier": "^2.8.8",
+    "turbo": "^1.10.0"
+  },
+  "packageManager": "pnpm@7.15.0"
 }
