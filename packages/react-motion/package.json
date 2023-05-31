@@ -1,6 +1,6 @@
 {
 	"name": "@glitchtech-dev/react-motion",
-	"version": "1.1.11",
+	"version": "1.2.0",
 	"description": "A simple wrapper of Motion for React.",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
@@ -28,9 +28,8 @@
 	"license": "MIT",
 	"scripts": {
 		"build": "tsup",
-		"build:old": "pnpm run lint && tsc -b ./tsconfig.esm.json ./tsconfig.types.json",
 		"lint": "eslint --ignore-path .gitignore . --ext ts",
-		"package:publish": "pnpm run lint && tsc -b ./tsconfig.esm.json ./tsconfig.types.json && standard-version && npm publish --access public"
+		"package:publish": "pnpm run lint && tsup && standard-version && npm publish --access public"
 	},
 	"peerDependencies": {
 		"motion": "10.16.2",
