@@ -24,7 +24,7 @@ pnpm install @glitchtech-dev/react-motion@latest
 
 ## Usage
 
-> WIP
+> WIP: examples are shown in the examples/ dir which are a variaty of different types of projects/frameworks all using React on the frontend.
 
 ## Author
 
