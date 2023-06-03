@@ -1,2 +1,6 @@
-import { useMotionAnimate, Motion } from "./motion";
-export { useMotionAnimate, Motion };
+import { useMotionAnimate, Div } from "./motion";
+export { useMotionAnimate, Div };
+export default {
+	useMotionAnimate,
+	Div,
+};

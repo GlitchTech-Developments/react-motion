@@ -22,16 +22,19 @@ export const useMotionAnimate = (
 	}
 };
 
-export const Motion = ({
+export const Div = ({
 	children,
 	animate,
 	transition,
+	initial,
 }: {
 	children: React.ReactNode;
 	animate: MotionKeyframesDefinition;
 	transition?: AnimationOptionsWithOverrides;
+	initial?: MotionKeyframesDefinition;
 }) => {
 	const currentElem = React.useRef(null);
+	const initialStyle = Object(initial);
 
 	React.useEffect(() => {
 		if (currentElem.current !== null) {
@@ -39,5 +42,9 @@ export const Motion = ({
 		}
 	}, []);
 
-	return <div ref={currentElem}>{children ? children : <></>}</div>;
+	return (
+		<div ref={currentElem} style={initialStyle}>
+			{children ? children : <></>}
+		</div>
+	);
 };

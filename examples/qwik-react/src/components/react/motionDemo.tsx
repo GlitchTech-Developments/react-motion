@@ -1,7 +1,7 @@
 /** @jsxImportSource react */
 import { qwikify$ } from "@builder.io/qwik-react"
 
-import { useMotionAnimate, Motion } from "@glitchtech-dev/react-motion"
+import Motion, { useMotionAnimate } from "@glitchtech-dev/react-motion"
 import { useEffect, useRef } from "react"
 
 const MotionDemo = () => {
@@ -44,7 +44,7 @@ const MotionDemo = () => {
       </div>
       <div className="flex flex-col gap-2 text-center">
         <h3 className="text-md font-semibold">Motion.div example</h3>
-        <Motion
+        <Motion.Div
           animate={{
             color: ["white", "cyan"],
             textShadow: [textShadow1, textShadow2],
@@ -52,7 +52,7 @@ const MotionDemo = () => {
           transition={{ duration: 2.5, easing: "ease-out" }}
         >
           <span>{"I'm a Motion div element!"}</span>
-        </Motion>
+        </Motion.Div>
       </div>
     </div>
   )

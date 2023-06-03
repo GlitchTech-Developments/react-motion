@@ -1,2 +1,1 @@
-"use strict";Object.defineProperty(exports, "__esModule", {value: true});"use client";var _chunkUBPCHIM2js = require('./chunk-UBPCHIM2.js');exports.Motion = _chunkUBPCHIM2js.b; exports.useMotionAnimate = _chunkUBPCHIM2js.a;
-//# sourceMappingURL=motion.js.map
+"use strict";Object.defineProperty(exports, "__esModule", {value: true});"use client";var _chunkYCSFAR7Pjs = require('./chunk-YCSFAR7P.js');exports.Div = _chunkYCSFAR7Pjs.b; exports.useMotionAnimate = _chunkYCSFAR7Pjs.a;

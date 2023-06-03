@@ -7,8 +7,8 @@ export default defineConfig((opts: any) => ({
 	format: ["esm", "cjs"],
 	dts: true,
 	clean: !opts.watch,
-	sourcemap: true,
+	sourcemap: false,
 	minify: true,
 	outDir: "dist",
-	target: "es2020",
+	target: "esnext",
 }));
