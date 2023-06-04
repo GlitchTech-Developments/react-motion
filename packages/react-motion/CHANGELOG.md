@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.2](https://github.com/GlitchTech-Developments/react-motion/compare/v1.4.1...v1.4.2) (2023-06-04)
+
+
+### Bug Fixes
+
+* added more descriptive docs on repo + npm linked readme ([ceafbb7](https://github.com/GlitchTech-Developments/react-motion/commit/ceafbb7a19a4c14348265f04b0a8c264b1f6c907))
+
 ### [1.4.1](https://github.com/GlitchTech-Developments/react-motion/compare/v1.5.1...v1.4.1) (2023-06-04)
 
 ## [1.4.0](https://github.com/GlitchTech-Developments/react-motion/compare/v1.3.1...v1.4.0) (2023-06-04)
