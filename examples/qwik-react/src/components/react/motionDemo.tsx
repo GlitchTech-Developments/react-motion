@@ -2,8 +2,9 @@
 import { qwikify$ } from "@builder.io/qwik-react"
 
 import Motion, { useMotionAnimate } from "@glitchtech-dev/react-motion"
-import { ElementOrSelector } from "motion"
-import { MouseEvent, useEffect, useRef } from "react"
+import type { ElementOrSelector } from "motion"
+import type { MouseEvent } from "react"
+import { useEffect, useRef } from "react"
 
 const MotionDemo = () => {
   const firstElem = useRef(null)
