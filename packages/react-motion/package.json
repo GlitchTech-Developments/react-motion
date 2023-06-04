@@ -1,6 +1,6 @@
 {
 	"name": "@glitchtech-dev/react-motion",
-	"version": "1.4.3",
+	"version": "1.4.4",
 	"description": "A simple wrapper of Motion for React.",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
