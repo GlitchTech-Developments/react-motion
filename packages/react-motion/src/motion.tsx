@@ -10,6 +10,16 @@ import {
 	animate,
 } from "motion";
 
+type tMotionElemProps = {
+	children: React.ReactNode;
+	animate: MotionKeyframesDefinition;
+	transition?: AnimationOptionsWithOverrides;
+	initial?: React.CSSProperties;
+	className?: string;
+	onClick?: React.MouseEventHandler;
+	onMouseOver?: React.MouseEventHandler;
+};
+
 export const useMotionAnimate = (
 	element: ElementOrSelector,
 	keyframeStyle: MotionKeyframesDefinition,
@@ -22,18 +32,12 @@ export const useMotionAnimate = (
 	}
 };
 
-export const Div = ({
-	children,
+const useMotionElemFunctionality = ({
+	initial,
 	animate,
 	transition,
-	initial,
-}: {
-	children: React.ReactNode;
-	animate: MotionKeyframesDefinition;
-	transition?: AnimationOptionsWithOverrides;
-	initial?: React.CSSProperties;
-}) => {
-	const currentElem = React.useRef(null);
+}: tMotionElemProps) => {
+	const currentElem = React.useRef<HTMLDivElement | null>(null);
 	const initialStyle = Object(initial);
 
 	React.useEffect(() => {
@@ -42,8 +46,43 @@ export const Div = ({
 		}
 	}, []);
 
+	return {
+		currentElem,
+		initialStyle,
+	};
+};
+
+export const Div = ({
+	children,
+	animate,
+	transition,
+	initial,
+	className,
+	onClick,
+	onMouseOver,
+}: tMotionElemProps) => {
+	const motionElemProps = useMotionElemFunctionality({
+		children,
+		animate,
+		transition,
+		initial,
+		className,
+		onClick,
+		onMouseOver,
+	});
+
 	return (
-		<div ref={currentElem} style={initialStyle}>
+		<div
+			ref={motionElemProps.currentElem}
+			style={
+				motionElemProps.initialStyle
+					? motionElemProps.initialStyle
+					: undefined
+			}
+			className={className ? className : undefined}
+			onClick={onClick ? onClick : undefined}
+			onMouseOver={onMouseOver ? onMouseOver : undefined}
+		>
 			{children ? children : <></>}
 		</div>
 	);

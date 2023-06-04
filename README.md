@@ -16,6 +16,16 @@
 
 > A simple wrapper of Motion for React which will (at some point) work similar to the current Solid.js wrapper that already is provided by Motion themselves.
 
+# Demos
+
+-   <a href="react-motion-qwik-example.vercel.app">Qwik React.js Integration Example</a>
+
+-   Astro.js React Integration (In the works)
+
+-   Next.js (In the works)
+
+-   Vite React.js SPA (In the works)
+
 ## Install
 
 ```sh

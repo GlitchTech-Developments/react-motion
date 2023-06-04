@@ -2,7 +2,8 @@
 import { qwikify$ } from "@builder.io/qwik-react"
 
 import Motion, { useMotionAnimate } from "@glitchtech-dev/react-motion"
-import { useEffect, useRef } from "react"
+import { ElementOrSelector } from "motion"
+import { MouseEvent, useEffect, useRef } from "react"
 
 const MotionDemo = () => {
   const firstElem = useRef(null)
@@ -45,6 +46,7 @@ const MotionDemo = () => {
       <div className="flex flex-col gap-2 text-center">
         <h3 className="text-md font-semibold">Motion.div example</h3>
         <Motion.Div
+          className="my-3"
           animate={{
             color: ["white", "cyan"],
             textShadow: [textShadow1, textShadow2],
@@ -53,6 +55,17 @@ const MotionDemo = () => {
           initial={{
             color: "white",
             textShadow: textShadow1,
+          }}
+          onClick={(e: MouseEvent) => {
+            const targetElem = e.target as ElementOrSelector
+            useMotionAnimate(
+              targetElem,
+              {
+                color: ["white", "cyan"],
+                textShadow: [textShadow1, textShadow2],
+              },
+              { duration: 1.5, easing: "ease-in-out" }
+            )
           }}
         >
           <span>{"I'm a Motion div element!"}</span>
