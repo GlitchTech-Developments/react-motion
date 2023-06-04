@@ -6,7 +6,7 @@ declare const Div: ({ children, animate, transition, initial, }: {
     children: React.ReactNode;
     animate: MotionKeyframesDefinition;
     transition?: AnimationOptionsWithOverrides | undefined;
-    initial?: MotionKeyframesDefinition | undefined;
+    initial?: React.CSSProperties | undefined;
 }) => React.JSX.Element;
 
 export { Div, useMotionAnimate };

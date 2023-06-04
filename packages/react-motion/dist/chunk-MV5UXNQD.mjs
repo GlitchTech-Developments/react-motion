@@ -1,1 +1,0 @@
-import*as e from"react";import{animate as s}from"motion";var c=(t,i,n)=>{try{s(t,i,n)}catch(o){console.error(o)}},f=({children:t,animate:i,transition:n,initial:o})=>{let r=e.useRef(null),a=Object(o);return e.useEffect(()=>{r.current!==null&&c(r.current,i,n)},[]),e.createElement("div",{ref:r,style:a},t||e.createElement(e.Fragment,null))};export{c as a,f as b};

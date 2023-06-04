@@ -31,7 +31,7 @@ export const Div = ({
 	children: React.ReactNode;
 	animate: MotionKeyframesDefinition;
 	transition?: AnimationOptionsWithOverrides;
-	initial?: MotionKeyframesDefinition;
+	initial?: React.CSSProperties;
 }) => {
 	const currentElem = React.useRef(null);
 	const initialStyle = Object(initial);

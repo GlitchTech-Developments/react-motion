@@ -8,7 +8,7 @@ declare const _default: {
         children: React.ReactNode;
         animate: motion.MotionKeyframesDefinition;
         transition?: motion.AnimationOptionsWithOverrides | undefined;
-        initial?: motion.MotionKeyframesDefinition | undefined;
+        initial?: React.CSSProperties | undefined;
     }) => React.JSX.Element;
 };
 

@@ -50,6 +50,10 @@ const MotionDemo = () => {
             textShadow: [textShadow1, textShadow2],
           }}
           transition={{ duration: 2.5, easing: "ease-out" }}
+          initial={{
+            color: "white",
+            textShadow: textShadow1,
+          }}
         >
           <span>{"I'm a Motion div element!"}</span>
         </Motion.Div>
