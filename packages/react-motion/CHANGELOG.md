@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/GlitchTech-Developments/react-motion/compare/v1.3.1...v1.4.0) (2023-06-04)
+
+
+### Features
+
+* full compat interopt with react hover+click func calls on motion+motion-div elem ([3241963](https://github.com/GlitchTech-Developments/react-motion/commit/3241963dcf56aa8b2e28f4d1e87ba7fe4ada5a13))
+
 ### [1.3.1](https://github.com/GlitchTech-Developments/react-motion/compare/v1.3.0...v1.3.1) (2023-06-04)
 
 ## 1.3.0 (2023-06-04)
