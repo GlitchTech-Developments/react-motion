@@ -3,14 +3,17 @@
   <a href="https://www.npmjs.com/package/@glitchtech-dev/react-motion" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/@glitchtech-dev/react-motion.svg">
   </a>
+  <a href="https://github.com/GlitchTech-Developments/react-motion/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/GlitchTech-Developments/react-motion" />
+  </a>
   <a href="https://github.com/GlitchTech-Developments/react-motion#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   <a href="https://github.com/GlitchTech-Developments/react-motion/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://github.com/GlitchTech-Developments/react-motion/blob/master/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/GlitchTech-Developments/react-motion" />
+  <a href="https://github.com/GlitchTech-Developments/react-motion/actions/workflows/workspace-ci.yml">
+    <img src="https://github.com/GlitchTech-Developments/react-motion/actions/workflows/workspace-ci.yml/badge.svg" alt="CI">
   </a>
 </p>
 
