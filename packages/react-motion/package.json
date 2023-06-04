@@ -17,7 +17,7 @@
 		"dist",
 		"package.json",
 		"LICENSE",
-		"../../README.md"
+		"README.md"
 	],
 	"keywords": [
 		"motion",

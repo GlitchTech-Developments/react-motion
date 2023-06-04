@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to react-motion 👋</h1>
+<h1 align="center">Welcome to react-motion monorepo 👋</h1>
 <p>
   <a href="https://www.npmjs.com/package/@glitchtech-dev/react-motion" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/@glitchtech-dev/react-motion.svg">
@@ -15,30 +15,6 @@
 </p>
 
 > A simple wrapper of Motion for React which will (at some point) work similar to the current Solid.js wrapper that already is provided by Motion themselves.
-
-## Install
-
-```sh
-pnpm install motion @glitchtech-dev/react-motion@latest
-```
-
-## Usage
-
-> WIP: examples are shown in the examples/ dir which are a variaty of different types of projects/frameworks all using React on the frontend.
-
-### Implementations
-
--   <a href="https://github.com/GlitchTech-Developments/react-motion/tree/main/examples/qwik-react">Qwik - React.js Integration</a>
-
-### Demos
-
--   <a href="https://react-motion-qwik-example.vercel.app">Qwik React.js Integration Example</a>
-
--   Astro.js React Integration (In the works)
-
--   Next.js (In the works)
-
--   Vite React.js SPA (In the works)
 
 ## Author
 
