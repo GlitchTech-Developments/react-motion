@@ -87,3 +87,39 @@ export const Div = ({
 		</div>
 	);
 };
+
+export const Span = ({
+	children,
+	animate,
+	transition,
+	initial,
+	className,
+	onClick,
+	onMouseOver,
+}: tMotionElemProps) => {
+	const motionElemProps = useMotionElemFunctionality({
+		children,
+		animate,
+		transition,
+		initial,
+		className,
+		onClick,
+		onMouseOver,
+	});
+
+	return (
+		<span
+			ref={motionElemProps.currentElem}
+			style={
+				motionElemProps.initialStyle
+					? motionElemProps.initialStyle
+					: undefined
+			}
+			className={className ? className : undefined}
+			onClick={onClick ? onClick : undefined}
+			onMouseOver={onMouseOver ? onMouseOver : undefined}
+		>
+			{children ? children : <></>}
+		</span>
+	);
+};

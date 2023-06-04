@@ -1,1 +1,1 @@
-"use client";import{a,b}from"./chunk-JSB65HU2.mjs";export{b as Div,a as useMotionAnimate};
+"use client";import{a,b,c}from"./chunk-KRWI6CSE.mjs";export{b as Div,c as Span,a as useMotionAnimate};

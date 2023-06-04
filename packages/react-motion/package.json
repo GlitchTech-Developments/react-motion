@@ -32,18 +32,18 @@
 		"package:publish": "pnpm run lint && tsup && standard-version && npm publish --access public"
 	},
 	"peerDependencies": {
-		"motion": "10.16.2",
-		"react": "18.2.0",
-		"react-dom": "18.2.0",
-		"typescript": "^5.0.4"
+		"motion": "^10.16.2",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"typescript": "^5.1.3"
 	},
 	"devDependencies": {
 		"@types/node": "^20.2.5",
-		"@types/react": "^18.2.7",
+		"@types/react": "^18.2.8",
 		"@types/react-dom": "^18.2.4",
 		"@typescript-eslint/eslint-plugin": "^5.59.8",
 		"@typescript-eslint/parser": "^5.59.8",
-		"eslint": "^8.41.0",
+		"eslint": "^8.42.0",
 		"eslint-plugin-react": "^7.32.2",
 		"standard-version": "^9.5.0",
 		"tsup": "^6.7.0"

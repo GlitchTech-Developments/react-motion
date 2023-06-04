@@ -18,7 +18,7 @@
 
 # Demos
 
--   <a href="react-motion-qwik-example.vercel.app">Qwik React.js Integration Example</a>
+-   <a href="https://react-motion-qwik-example.vercel.app">Qwik React.js Integration Example</a>
 
 -   Astro.js React Integration (In the works)
 

@@ -12,5 +12,6 @@ type tMotionElemProps = {
 };
 declare const useMotionAnimate: (element: ElementOrSelector, keyframeStyle: MotionKeyframesDefinition, animationConfig?: AnimationOptionsWithOverrides) => void;
 declare const Div: ({ children, animate, transition, initial, className, onClick, onMouseOver, }: tMotionElemProps) => React.JSX.Element;
+declare const Span: ({ children, animate, transition, initial, className, onClick, onMouseOver, }: tMotionElemProps) => React.JSX.Element;
 
-export { Div, useMotionAnimate };
+export { Div, Span, useMotionAnimate };
