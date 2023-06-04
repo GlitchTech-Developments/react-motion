@@ -16,7 +16,21 @@
 
 > A simple wrapper of Motion for React which will (at some point) work similar to the current Solid.js wrapper that already is provided by Motion themselves.
 
-# Demos
+## Install
+
+```sh
+pnpm install motion @glitchtech-dev/react-motion@latest
+```
+
+## Usage
+
+> WIP: examples are shown in the examples/ dir which are a variaty of different types of projects/frameworks all using React on the frontend.
+
+### Implementations
+
+-   <a href="https://github.com/GlitchTech-Developments/react-motion/tree/main/examples/qwik-react">Qwik - React.js Integration</a>
+
+### Demos
 
 -   <a href="https://react-motion-qwik-example.vercel.app">Qwik React.js Integration Example</a>
 
@@ -25,16 +39,6 @@
 -   Next.js (In the works)
 
 -   Vite React.js SPA (In the works)
-
-## Install
-
-```sh
-pnpm install @glitchtech-dev/react-motion@latest
-```
-
-## Usage
-
-> WIP: examples are shown in the examples/ dir which are a variaty of different types of projects/frameworks all using React on the frontend.
 
 ## Author
 
