@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.3](https://github.com/GlitchTech-Developments/react-motion/compare/v1.4.2...v1.4.3) (2023-06-04)
+
+
+### Bug Fixes
+
+* moved package readme from mono root to package root to include it inside npm package ([32381a5](https://github.com/GlitchTech-Developments/react-motion/commit/32381a5f518367a10c6f78f74a17ab16fa1c09f6))
+
 ### [1.4.2](https://github.com/GlitchTech-Developments/react-motion/compare/v1.4.1...v1.4.2) (2023-06-04)
 
 
