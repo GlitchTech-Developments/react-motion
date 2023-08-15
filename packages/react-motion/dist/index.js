@@ -1,1 +1,0 @@
-"use strict";Object.defineProperty(exports, "__esModule", {value: true});var _chunkWDM2U72Kjs = require('./chunk-WDM2U72K.js');var i={useMotionAnimate:_chunkWDM2U72Kjs.a,Div:_chunkWDM2U72Kjs.b};exports.Div = _chunkWDM2U72Kjs.b; exports.default = i; exports.useMotionAnimate = _chunkWDM2U72Kjs.a;
